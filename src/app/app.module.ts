@@ -8,15 +8,17 @@ import { LoginComponent } from './modules/login/login-form/login-form.component'
 
 import { SocialLoginModule } from 'angularx-social-login';
 import { SocialAuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider  } from 'angularx-social-login';
+import{SocialIconsComponent} from './modules/login/login-form/socialAuthIcons/socialAuthIcons.component'
 
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent
+    AppComponent,LoginComponent,SocialIconsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    SocialLoginModule
   ],
   providers: [{
     provide: 'SocialAuthServiceConfig',

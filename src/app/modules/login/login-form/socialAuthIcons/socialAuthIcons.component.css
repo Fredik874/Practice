@@ -3,3 +3,13 @@
     right: 20px;
     top: -12px;
 }
+.social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
+    }
+    
+.social_icon span:hover{
+    color: white;
+    cursor: pointer;
+}
