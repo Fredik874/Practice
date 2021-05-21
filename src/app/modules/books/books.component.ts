@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
-import {User} from '../../core/models/user'
-import {UserService} from '../../core/services/user.servise';
+import {BooksModel} from '../../core/models/books'
+import {BooksService} from '../../core/services/books.servise';
 
 
 @Component({
@@ -9,12 +9,11 @@ import {UserService} from '../../core/services/user.servise';
   styleUrls: ['./books.component.css']
 })
 export class Books implements OnInit{
-  books: User[] = []; 
-  constructor(private userService: UserService){
+  books: BooksModel[] = []; 
+  constructor(private booksService: BooksService){
   }
   ngOnInit(){
-    //this.books = this.userService.getUsers();
-    this.userService.getUsers().subscribe(res => {
+    this.booksService.getBooks().subscribe(res => {
       this.books = res;
     });
     console.log(this.books); 

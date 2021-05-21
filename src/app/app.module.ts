@@ -9,6 +9,7 @@ import { LoginComponent } from './modules/login/login-form/login-form.component'
 import { Books } from './modules/books/books.component';
 import { AppRoutingModule } from './app.routing';
 import {UserService} from './core/services/user.servise';
+import {BooksService} from './core/services/books.servise';
 import {AuthService} from './core/services/auth.service';
 
 import { SocialLoginModule } from 'angularx-social-login';
@@ -46,7 +47,7 @@ import{SocialIconsComponent} from './modules/login/login-form/socialAuthIcons/so
     } as SocialAuthServiceConfig,
     
   },
-  UserService,AuthService
+  UserService,AuthService,BooksService
   ],
   bootstrap: [AppComponent]
 })
