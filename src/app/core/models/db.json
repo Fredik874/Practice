@@ -1,16 +1,16 @@
 {
-    "author" : [ {
-        "id": 1,
-        "age" : 16,
-        "name" : "Andy"
+    "users" : 
+    [ {
+        "login":"admin",
+        "password":"443d3f698fb0cf2380a591795cd757ae4a9600972c39533598e763d795c489f7f765ea4b8193f748450e49ec00bc838c"
       }, 
       {
-        "id": 2,
-        "age" : 22,
-        "name" : "Lisa"
+        "login":"test",
+        "password":"test"
       }
     ],
-    "comments" : [ 
+    "comments" :
+    [ 
         {
         "id": 1,
         "date" : "03-18-2016",
@@ -22,7 +22,8 @@
         "message" : "Great view!"
       }
     ],
-    "pictures" : [
+    "pictures" : 
+    [
       {
         "id": 1,
         "author" : "Lisa",
@@ -38,4 +39,5 @@
         "title" : "Landscape view"
       }
     ]
-  }
+  
+}

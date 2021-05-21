@@ -1,6 +1,8 @@
 import { Component,OnInit } from '@angular/core';
 import { NgModel} from '@angular/forms';
-import { SocialAuthService } from "angularx-social-login";
+import { Router } from '@angular/router';
+
+import { SocialAuthService, SocialUser } from "angularx-social-login";
 import { FacebookLoginProvider, GoogleLoginProvider } from "angularx-social-login";
 
 @Component({
@@ -11,13 +13,18 @@ import { FacebookLoginProvider, GoogleLoginProvider } from "angularx-social-logi
 
 export class SocialIconsComponent implements OnInit {
 
-    constructor(private authService: SocialAuthService) { }
+    constructor(private authService: SocialAuthService,private router: Router) { }
     ngOnInit(): void {
-        throw new Error('Method not implemented.');
+      console.log();
     }
   
     signInWithGoogle(): void {
-      this.authService.signIn(GoogleLoginProvider.PROVIDER_ID);
+      this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(res => {
+        this.authService.authState.subscribe(SocialUser =>{
+          this.router.navigate(['/books']);
+          console.log(SocialUser);
+        })
+      });
     }
   
     signInWithFB(): void {
