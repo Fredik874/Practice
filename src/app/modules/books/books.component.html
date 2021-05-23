@@ -1,7 +1,7 @@
-<div class="container">
+<div class="container" >
   <nav>
     <h2>Books</h2>
-    <input type="text" ng-model="BooksNameSearch">
+    <input type="text" name="BooksNameSearch" [(ngModel)]="BooksNameSearch">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">User</a>
     <div class="dropdown-menu">
         <div class="dropdown-item"></div>
@@ -10,7 +10,7 @@
         <a class="dropdown-item" href="#">SignOut</a>
       </div>
   </nav>
-  <div class="card-group vgr-cards" *ngFor="let itemBooks of books">
+  <div class="card-group vgr-cards" *ngFor="let itemBooks of books| filter: BooksNameSearch">
       <div class="card">
         <div class="card-img-body">
         <img class="card-img" src={{itemBooks.img}} alt="Card image cap">

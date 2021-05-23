@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { Http } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import {FilterPipe} from './core/pipes/filter'
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/login-form/login-form.component';
@@ -21,7 +22,12 @@ import{SocialIconsComponent} from './modules/login/login-form/socialAuthIcons/so
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,SocialIconsComponent,Books,StarRate
+    AppComponent,
+    
+    LoginComponent,
+    SocialIconsComponent,
+    
+    Books,StarRate,FilterPipe
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component,OnInit } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
+
 import {BooksModel} from '../../core/models/books'
 import {BooksService} from '../../core/services/books.servise';
 
@@ -10,6 +12,8 @@ import {BooksService} from '../../core/services/books.servise';
 })
 export class Books implements OnInit{
   books: BooksModel[] = []; 
+  BooksNameSearch:string='';
+  
   constructor(private booksService: BooksService){
   }
   ngOnInit(){
