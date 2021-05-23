@@ -1,5 +1,6 @@
 <nav>
     <h2>Books</h2>
+    <input type="text" ng-model="BooksNameSearch">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">User</a>
     <div class="dropdown-menu">
         <div class="dropdown-item"></div>
@@ -8,8 +9,15 @@
         <a class="dropdown-item" href="#">SignOut</a>
       </div>
 </nav>
-<table>
-    <tr *ngFor="let itemBooks of books">
-        <td></td>
-    </tr>
-</table>
+<div class="card-group vgr-cards" *ngFor="let itemBooks of books">
+    <div class="card">
+      <div class="card-img-body">
+      <img class="card-img" src={{itemBooks.img}} alt="Card image cap">
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">{{itemBooks.name}}</h4>
+        <p class="card-text">{{itemBooks.rate}}</p>
+        <a href="#" class="btn btn-outline-primary">Primary</a>
+      </div>
+    </div>
+</div>

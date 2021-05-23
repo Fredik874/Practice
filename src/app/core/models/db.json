@@ -13,17 +13,17 @@
     [ 
       {
         "name": "1 book item",
-        "img" : "#",
+        "img" : "https://picsum.photos/500/230",
         "rate" : 4
       },
       {
         "name": "2 book item",
-        "img" : "#",
+        "img" : "https://picsum.photos/500/232",
         "rate" : 3
       },
       {
         "name": "3 book item",
-        "img" : "#",
+        "img" : "https://picsum.photos/500/235",
         "rate" : 4
       }
     ],

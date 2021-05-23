@@ -8,10 +8,9 @@ import {BooksModel} from '../models/books';
 @Injectable()
 export class BooksService{
     constructor(private http: HttpClient){}
-    private BooksArr: BooksModel[] = [];
    
     getBooks(): Observable<BooksModel[]>  {
-        console.log("get",this.BooksArr) 
+        
         return this.http.get<any[]>(`${environment.apiUrl}/books`);
     }
     addBooks(book:BooksModel):void{
