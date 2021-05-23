@@ -25,6 +25,41 @@
         "name": "3 book item",
         "img" : "https://picsum.photos/500/235",
         "rate" : 4
+      },
+      {
+        "name": "4 book item",
+        "img" : "https://picsum.photos/500/232",
+        "rate" : 3
+      },
+      {
+        "name": "5 book item",
+        "img" : "https://picsum.photos/500/242",
+        "rate" : 1
+      },
+      {
+        "name": "6 book item",
+        "img" : "https://picsum.photos/500/212",
+        "rate" : 1
+      },
+      {
+        "name": "7 book item",
+        "img" : "https://picsum.photos/500/231",
+        "rate" : 3
+      },
+      {
+        "name": "8 book item",
+        "img" : "https://picsum.photos/500/132",
+        "rate" : 2
+      },
+      {
+        "name": "9 book item",
+        "img" : "https://picsum.photos/500/112",
+        "rate" : 1
+      },
+      {
+        "name": "10 book item",
+        "img" : "https://picsum.photos/500/112",
+        "rate" : 5
       }
     ],
     "pictures" : 

@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/login/login-form/login-form.component';
 import { Books } from './modules/books/books.component';
+import { StarRate } from './modules/books/star-rate/star-rate.component';
+
 import { AppRoutingModule } from './app.routing';
 import {UserService} from './core/services/user.servise';
 import {BooksService} from './core/services/books.servise';
@@ -19,7 +21,7 @@ import{SocialIconsComponent} from './modules/login/login-form/socialAuthIcons/so
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,SocialIconsComponent,Books
+    AppComponent,LoginComponent,SocialIconsComponent,Books,StarRate
   ],
   imports: [
     BrowserModule,
